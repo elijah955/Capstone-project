@@ -1,0 +1,290 @@
+body{
+	padding-top: 4em;
+	padding-right: 5em;
+	padding-left: 5em;
+	padding-bottom: 8em;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	width: auto;
+	border: 4px solid #8f34eb;
+}
+
+h1 {
+	text-align: center;
+	padding: .2em;
+}
+
+h4{
+	font-size: 1.3em;
+}
+
+div#index{
+	background-color: #ffffff; 
+	width: 80%;
+  	padding: 16px;
+	margin:auto;
+}
+
+div#failed{
+	color: red;
+	font-weight: bold;
+}
+
+input[type=text], input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+}
+
+input.form{
+	padding: 10px;
+	font-size: 1.3em;
+	display: flex;
+	flex-direction: column;
+	margin: 25px;
+}
+
+p{
+	font-size: 1.1em;
+}
+
+#slash{
+	font-size: 1.1em;
+	color: #3c65bd;
+	font-style: italic;
+	border: 1.2px solid #37589e;
+	padding: 10px;
+	border-radius: 36px;
+	width: 43%;
+}
+
+#footer{
+	padding-top: 20px;
+}
+
+.nav{
+	display: inline-flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	width: 40%;
+}
+
+.flex-container2{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
+	padding-left: 120px;
+	width: 40%;
+}
+
+.cancel{
+	background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+	padding: 3px;
+  border: 1px solid #000;
+  color: black;
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 1.2em;
+}
+
+.submit{
+	background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+	padding: 3px;
+  border: 1px solid #000;
+  color: black;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.signout{
+	position: fixed;
+	bottom: 15;
+	color: #ffffff;
+	background-color: #000000;
+	border: none;
+	border-radius: 36px;
+	padding: 15px 22px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+.space{
+	padding-bottom: 12px;
+}
+
+.add{
+	color: #050000;
+	background-color: #EAEAEA;
+	border: none;
+	border-radius: 36px;
+	padding: 8px 25px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.delete{
+	background-color: rgba(255, 0, 13, .5);
+	color: #050000;
+	border: none;
+	border-radius: 36px;
+	padding: 8px 12px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+.no{
+	background-color: #EAEAEA;
+	color: #050000;
+	border: none;
+	border-radius: 36px;
+	padding: 8px 12px;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+a.add:hover{
+	background-color:#D8D8D8;
+}
+
+.search{
+	color: #050000;
+	background-color: #EAEAEA;
+	border: none;
+	border-radius: 36px;
+	padding: 8px 25px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.search:hover{
+	background-color:#D8D8D8;
+}
+
+.inventory{
+	color: #050000;
+	background-color: #37c4aa;
+	border: none;
+	border-radius: 36px;
+	padding: 15px 22px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a.inventory:hover{
+	background-color:#2a9682;
+}
+
+.manager{
+	color: #050000;
+	background-color: #e32020;
+	border: none;
+	border-radius: 36px;
+	padding: 15px 22px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a.manager:hover{
+	background-color: #9c1a1a;
+}
+
+.customers{
+	color: #050000;
+	background-color: #3397f5;
+	border: none;
+	border-radius: 36px;
+	padding: 15px 22px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a.customers:hover{
+	background-color: #266fb5;
+}
+
+.checkout{
+	color: #ffffff;
+	background-color: #c203fc;
+	border: none;
+	border-radius: 36px;
+	padding: 15px 22px;
+	margin-top: 20px;
+	margin-left: 205px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a.checkout:hover{
+	background-color: #8108a6;
+}
+
+.report{
+	color: #000000;
+	background-color: #c0c0c0;
+	border: none;
+	border-radius: 36px;
+	padding: 15px 22px;
+	margin-top: 20px;
+	margin-left: 205px;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+a.report:hover{
+	background-color: #9a9a9a;
+}
+
+.print{
+	margin-bottom: 20px;
+}
+
+@media (max-width: 1300px){
+	.nav{
+		flex-flow: column;
+	}
+	.inventory{
+		font-size: 1em;
+	}
+	.customers{
+		font-size: 1em;
+	}
+	.manager{
+		font-size: 1em;
+	}
+	.checkout{
+		font-size: 1em;
+		margin-left: 0px;
+	}
+	.report{
+		font-size: 1em;
+		margin-left: 0px;
+	}
+	.flex-container{
+		padding-left: 0px;
+		width: 100%;
+		padding-bottom: 0px;
+	}
+	.flex-container2{
+		padding-left: 0px;
+		width: 100%;
+	}
+}
