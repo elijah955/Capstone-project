@@ -1,0 +1,51 @@
+<?php
+session_start();
+//check session first
+if (!isset($_SESSION['emp_id'])){
+	echo "You are not logged in!<br>";
+	echo ("<a href=https://www.ejfranks.uwmsois.com/Capstone/htdocs/Home/login.php>Login here</a><p>");
+	exit();
+}else{
+	//include the header
+	include ("../includes/header.php");
+	require_once ('../../mysqli_connect4.php'); 
+if (isset($_POST['submitted'])){
+		$first_name=$_POST['first_name']; 
+		$last_name=$_POST['last_name']; 
+		$phone=$_POST['phone']; 
+		$email=$_POST['email']; 
+		$position=$_POST['position']; 
+		$query="INSERT INTO employees (first_name, last_name, phone, email, position)
+			Values ('$first_name', '$last_name', '$phone', '$email', '$position')"; 
+		$result=@mysqli_query ($dbc, $query); 
+		if ($result){
+			echo "<center><h2><b>A new employee has been added.</b></h2>"; 
+			echo "<a href=menu.php class='add'>Show All employees</a></center>"; 
+		}else {
+			echo "<p>The record could not be added due to a system error" . mysqli_error() . "</p>"; 
+		}
+	} // only if submitted by the form
+	mysqli_close($dbc);
+?>
+
+<center>
+	<h2>Enter information for new employee to be added to the database:</h2>
+	<form action="add.php" method="post">
+		<input name="first_name" class="form" size=50 placeholder="First Name" value="<?php if (isset($_POST['first_name'])) echo $_POST['first_name']; ?>" required />
+		<input name="last_name" class="form" size=50 placeholder="Last Name" value="<?php if (isset($_POST['last_name'])) echo $_POST['last_name']; ?>" required/>
+		<input name="phone" class="form" size=50 placeholder="Phone Number" value="<?php if (isset($_POST['phone'])) echo $_POST['phone']; ?>" required/>
+		<input name="email" class="form" size=50 placeholder="Email" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" required/>
+		<input name="position" class="form" size=50 placeholder="Position" value="<?php if (isset($_POST['position'])) echo $_POST['position']; ?>" />
+		<input type=submit value=Submit class="submit">
+		<a href="https://www.ejfranks.uwmsois.com/Capstone/htdocs/employees/menu.php" class="cancel">Cancel</a>
+	<input type="hidden" name="submitted" value="true">
+	</form>
+</center>
+
+<?
+	//include the footer
+	include ("../includes/footer.php");
+}
+?>
+
+
